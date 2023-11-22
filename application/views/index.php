@@ -71,16 +71,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <p class="large-font small-font">Pon a prueba tus conocimientos con la serie de ejercicios que tenemos para ti.
                     &#176;</p>
                 <div class="text-center mt-3 mb-4">
-                <a href="<?php echo base_url('recursos/ejercicios'); ?>">
+                <a href="<?php echo base_url('elevando/ejercicios'); ?>">
                     <img class="city-symbol" src="img/material.png" alt="City">
                 </div>
             </div>
             </a>
         </div>
-
-        <!-- Enlace a la vista ejercicios.php en el controlador Elevando -->
-<a href="<?php echo base_url('elevando/ejercicios'); ?>">Ir a Ejercicios</a>
-
+        
         <div class="col-md-6 mb-4">
             <div class="card text-center pt-4 border-0">
                 <h4 class="mb-0">MATERIAL DE APOYO</h4>
