@@ -63,7 +63,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </main>
 
 
-    <?php include 'footer.html'; ?>
+    <?php include('application/views/footer.html'); ?>
    
 </body>
 </html>

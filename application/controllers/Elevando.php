@@ -9,7 +9,7 @@ class Elevando extends CI_Controller {
 		$this->load->view('index');
 	}
 
-	public function mostrar_ejercicios() {
+	public function ejercicios() {
         $this->load->view('recursos/ejercicios');
     }
 }

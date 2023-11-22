@@ -53,3 +53,4 @@ $route['default_controller'] = 'elevando';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['recursos/ejercicios'] = 'elevando/mostrar_ejercicios';
+$route['elevando/ejercicios'] = 'elevando/ejercicios';
