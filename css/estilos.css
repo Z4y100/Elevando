@@ -1,0 +1,227 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;  
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    color: #f9f6fd;
+    margin-top: auto; /* Esto empuja el footer hasta abajo */
+}
+
+.redes {
+    display: flex;
+    justify-content: space-around;
+    background-color: #522e61;
+    padding: 20px; /* Ajusta el relleno para hacerlo más grande */
+}
+
+.redes a {
+    color: #f9f6fd;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.redes a i {
+    margin-left: 10px; /* Ajusta el espacio entre el texto y el icono */
+}
+
+.copyright {
+    background-color: #31143e;
+    padding: 20px; /* Ajusta el relleno para hacerlo más grande */
+    text-align: center;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+
+.icon-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px; /* Ajusta el valor según tus necesidades */
+  }
+  
+
+
+/* Cambiar el color del header */
+nav.navbar {
+    background-color: #541197; /* Puedes cambiar el color aquí */
+}
+.navbar-brand img {
+    width: 10%; /* Puedes ajustar el valor según tus necesidades */
+    height: auto; /* Esto asegura que la altura se ajuste proporcionalmente al ancho */
+}
+
+/* Estilos para el tema claro */
+body.light-mode {
+    background-color: #ffffff; /* Fondo claro */
+    color: #000000; /* Texto oscuro */
+}
+
+/* Estilos para el tema oscuro */
+body.dark-mode {
+    background-color: #1f2430; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
+}
+/* Estilos para el switch */
+.custom-control-input {
+    display: none; /* Oculta el input checkbox por defecto */
+}
+
+.custom-control-label {
+    position: relative;
+    padding-left: 2em; /* Ajusta el espacio para el switch */
+    cursor: pointer;
+}
+
+.custom-control-label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.5em;
+    height: 1em;
+    background-color: #ddd; /* Color de fondo cuando está en "no" */
+    border-radius: 0.75em; /* Forma redondeada */
+    transition: background-color 0.3s;
+}
+
+.custom-control-input:checked + .custom-control-label:before {
+    background-color: #5bdea1; /* Color de fondo cuando está en "sí" */
+}
+
+.estudiando {
+    text-align: center; /* Alinea el contenido al centro */
+}
+
+.estudiando img {
+    display: block; /* Elimina el espacio extra por debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+
+main {
+    /* Agrega espacio entre el encabezado y la imagen */
+    margin-top: 50px; /* Puedes ajustar el valor según sea necesario */
+}
+
+
+
+.card {
+    max-width: 70%; /* Ajusta el ancho máximo de la tarjeta según sea necesario */
+    background-color: #F3E5F5;
+    margin: 0 auto; /* Centra la tarjeta en el contenedor */
+}
+
+.block {
+    width: 100%; /* Hace que los bloques ocupen el 100% del ancho de la tarjeta */
+    background-color: #E1BEE7;
+    cursor: pointer;
+    padding: 10px 0px;
+}
+
+.first-block {
+    border-bottom-left-radius: 5px;
+}
+
+.last-block {
+    border-bottom-right-radius: 5px;
+}
+
+.block.active, .block:hover {
+    background-color: #CE93D8;
+}
+
+.city-symbol {
+    max-width: 100%; /* Ajusta el ancho máximo del símbolo de la ciudad */
+    height: auto; /* Mantiene la proporción original de la imagen */
+}
+
+.large-font {
+    font-size: 2rem; /* Ajusta el tamaño de la fuente del número grande */
+}
+
+.symbol-img {
+    width: 30px; /* Ajusta el tamaño de las imágenes de los símbolos */
+    height: 30px;
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        width: 92%;
+    }
+}
+
+.small-font {
+    font-size: 100%; /* Ajusta el tamaño según tus preferencias */
+  }
+  
+
+
+
+
+  @keyframes move-bg {
+    to {
+      background-position: var(--bg-size) 0;
+    }
+  }
+  
+  .boujee-text {
+    --bg-size: 400%;
+    --color-one: #fbff00;
+    --color-two: #6f20a9;
+    font-size: clamp(3rem, 25vmin, 8rem);
+    background: linear-gradient(
+                  90deg,
+                  var(--color-one),
+                  var(--color-two),
+                  var(--color-one)
+                ) 0 0 / var(--bg-size) 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: move-bg 30s infinite linear; /* Ajusta la duración (16s en este caso) */
+    font-size: 600%; 
+    margin-top: 20px; 
+    text-align: center;
+}
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .boujee-text {
+      animation: move-bg 30s linear infinite; 
+    }
+  }
+  
+
+  #recursos {
+    /* background-color: #922424;  */
+    text-align: center;
+    /* padding: 20px 0; Espacio arriba y abajo */
+}
+
+#recursos h1 {
+    padding: 20px 0; /* Espacio arriba y abajo */
+    color: purple; /* Color morado */
+    margin: 20px 0; /* Espacio arriba y abajo para el título */
+    font-size: 400%;
+}
+
+#nosotros {
+    /* background-color: #922424;  */
+    text-align: center;
+    /* padding: 20px 0; Espacio arriba y abajo */
+}
+
+
+#nosotros h1 {
+    padding: 20px 0; /* Espacio arriba y abajo */
+    color: purple; /* Color morado */
+    margin: 20px 0; /* Espacio arriba y abajo para el título */
+    font-size: 400%;
+}
