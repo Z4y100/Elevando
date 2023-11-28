@@ -1,0 +1,5 @@
+nivel 1: vale 0 o 1 el exponente.
+nivel 2: cuando los exponentes son negativos
+nivel 3: cuando se multiplican o dividen numeros con la misma base y diferente exponente o diferente base y mismo exponente
+nivel 4: cuando se eleva una potencia a otro exponente. ejemplo (4^3)^5
+nivel 5: todos los ejercicios combinados

@@ -225,3 +225,44 @@ main {
     margin: 20px 0; /* Espacio arriba y abajo para el título */
     font-size: 400%;
 }
+
+
+.exercise-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 80px; /* Ajusta según sea necesario */
+    z-index: 1; /* Asegúrate de que el ejercicio esté encima */
+  }
+  
+  
+  #exercise {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  

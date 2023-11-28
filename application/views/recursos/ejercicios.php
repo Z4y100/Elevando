@@ -56,10 +56,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <main>
 
+<div class="container">
 
-            
+    <div class="exercise-container">
+            <h2>Ejercicio de Exponentes</h2>
+            <p>Resuelve la siguiente operación:</p>
+            <p id="exercise"></p>
+            <label for="userAnswer">Tu respuesta:</label>
+            <input type="text" id="userAnswer">
+            <button onclick="checkAnswer()">Verificar</button>
+    </div>
     
-
+</div>
     
     </main>
 
