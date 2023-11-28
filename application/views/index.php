@@ -32,8 +32,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             OPCIONES
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="switch-theme">
-                            <li><a class="dropdown-item" href="#">Opción 1</a></li>
-                            <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                            <!-- <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                            <li><a class="dropdown-item" href="#">Opción 2</a></li> -->
                             <li><hr class="dropdown-divider"></li>
                             <li>
                                 <!-- Reemplaza el botón con un input de tipo checkbox -->
@@ -86,7 +86,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         que te ayudará a conocer sobre las leyes de los exponentes.
                     &#176;</p>
                 <div class="text-center mt-3 mb-4">
-                <a href="<?php echo base_url('controlador/nueva_vista'); ?>">
+                <a href="<?php echo base_url('elevando/material'); ?>">
                     <img class="city-symbol" src="img/ideas.png" alt="City">
                 </div>
             </div>
@@ -97,9 +97,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </section>
 <section id="nosotros">
     <h1>Nosotros</h1>
-   
 
+    <div id="descripcion-nosotros">
+        <p>
+            Este es un sitio web dirigido a estudiantes de nivel secundaria que deseen conocer sobre las leyes de los exponentes y poner en práctica lo aprendido. Se busca llegar a los usuarios mediante el material de apoyo construido con base en las diferentes formas de recibir el conocimiento e interactuar con el contexto donde se aprende según el modelo VAK (Visual-Auditivo-Kinestésico), así como instruir sobre los siguientes tópicos:
+        </p>
+        <ul>
+            <li>Definición de base, exponente y el proceso de potenciación.</li>
+            <li>Exponentes con valor 0 ó 1.</li>
+            <li>Exponentes negativos.</li>
+            <li>Multiplicación o división de potencias con la misma base.</li>
+            <li>Multiplicación o división de potencias con el mismo exponente y diferente base.</li>
+            <li>Potencia de otra potencia.</li>
+        </ul>
+    </div>
+
+    <div id="sobre-los-autores">
+        <h2>Sobre los Autores</h2>
+        <p>
+            <strong>Ing. Luisa Reyna Beatriz Ayon Muñoz:</strong> Ingeniera en Computación por la Universidad Autónoma del Estado de México. Actualmente cursa la Maestría en Ciencias de la Computación en el CU Valle de Chalco dentro de la línea de investigación llamada Cómputo Aplicado a la Educación y a los Sistemas de Información. Ha impartido conferencias en instituciones educativas de nivel básico y medio superior para la difusión de la ciencia.
+        </p>
+        <p>
+            <strong>Dr. Felipe de Jesús Matías Torres:</strong> Doctor en Ciencias en Matemática Educativa por el CINVESTAV. Actualmente realiza una estancia posdoctoral en el CU Valle de Chalco. Ha impartido clases a nivel superior y posgrado en distintas materias como Matemáticas Discretas, Geometría Analítica, Objetos de aprendizaje y recursos educativos abiertos, entre otras. Ha publicado diversos artículos en revistas nacionales e internacionales.
+        </p>
+    </div>
 </section>
+
 
             
     

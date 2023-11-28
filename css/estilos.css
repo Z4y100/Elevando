@@ -266,3 +266,90 @@ main {
     background-color: #45a049;
   }
   
+ 
+a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #75756f;
+}
+
+a:hover {
+    /* Opcional: Estilo cuando el mouse está sobre el enlace */
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+    color: rgb(226, 240, 41); /* Cambia el color al pasar el mouse (puedes personalizar esto) */
+}
+
+
+
+#nosotros {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#nosotros h1 {
+    color: purple;
+    text-align: center;
+}
+
+#descripcion-nosotros {
+    margin-bottom: 20px;
+}
+
+#descripcion-nosotros p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+#descripcion-nosotros ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#descripcion-nosotros li {
+    margin-bottom: 8px;
+}
+
+#sobre-los-autores {
+    border-top: 2px solid #ccc;
+    padding-top: 20px;
+}
+
+#sobre-los-autores h2 {
+    color:purple;
+}
+
+#sobre-los-autores p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+strong {
+    color: #333;
+}
+
+
+
+
+
+
+
+body {
+    padding-top: 70px; /* Ajusta el valor según sea necesario para evitar la superposición del encabezado */
+}
+
+.tittle {
+    margin-top: 100px; /* Ajusta el valor según sea necesario para establecer el margen superior del título principal */
+}
+
+
+
+#tituloPrincipal {
+    text-align: center; /* Centrar el texto */
+    color: purple; /* Color morado */
+}
+
+.indicaciones {
+    text-align: center; /* Centrar el texto */
+    color: purple; /* Color morado */
+}

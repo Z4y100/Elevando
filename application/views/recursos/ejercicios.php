@@ -25,24 +25,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse1">
                 <div class="navbar-nav ms-auto">
-                    <a href="#" class="nav-item nav-link active">INICIO</a>
-                    <a href="#recursos" class="nav-item nav-link">RECURSOS</a>
-                    <a href="#nosotros" class="nav-item nav-link">NOSOTROS</a>
+                    <a href="<?php echo base_url('elevando/index'); ?>">INICIO</a>
+                    <a href="#recursos" class="nav-item nav-link"></a>
+                    <a href="#nosotros" class="nav-item nav-link"></a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            OPCIONES
+                            
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="switch-theme">
-                            <li><a class="dropdown-item" href="#">Opción 1</a></li>
-                            <li><a class="dropdown-item" href="#">Opción 2</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li>
-                                <!-- Reemplaza el botón con un input de tipo checkbox -->
-                                <input type="checkbox" id="switch-theme" class="custom-control-input">
-                                <label class="custom-control-label" for="switch-theme">Tema</label>
-
-                            </li>
-                        </ul>
+                        
             </div>
         </div>
                     <!-- <form class="d-flex">
@@ -56,19 +46,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <main>
 
-<div class="container">
+        <div class="container">
+            <div class="exercise-container">
+                <h2>Ejercicio de Exponentes</h2>
+                <p>Resuelve la siguiente operación:</p>
+                <p id="exercise"></p>
+                <label for="userAnswer">Tu respuesta:</label>
+                <input type="text" id="userAnswer">
+                <button id="verificarButton">Verificar</button>
+            </div>
+        </div>
 
-    <div class="exercise-container">
-            <h2>Ejercicio de Exponentes</h2>
-            <p>Resuelve la siguiente operación:</p>
-            <p id="exercise"></p>
-            <label for="userAnswer">Tu respuesta:</label>
-            <input type="text" id="userAnswer">
-            <button id="verificarButton">Verificar</button>
 
-    </div>
-    
-</div>
+
+
     
     </main>
 
