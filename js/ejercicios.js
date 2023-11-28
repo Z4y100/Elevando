@@ -52,7 +52,21 @@ document.addEventListener("DOMContentLoaded", function () {
                         confirmButtonText: 'ENTENDIDO'
                     });
 
-                    // Ahora, puedes agregar las funciones generateExercise y checkAnswer
+                    // Variables para controlar el nivel y el número de respuestas correctas seguidas
+                    let nivelActual = 1;
+                    let respuestasCorrectasSeguidas = 0;
+
+                    function avanzarNivel() {
+                        nivelActual++;
+                        respuestasCorrectasSeguidas = 0;
+
+                        // Mostrar una alerta indicando que el usuario ha avanzado al siguiente nivel
+                        Swal.fire({
+                            title: `¡Felicidades! Has avanzado al Nivel ${nivelActual}`,
+                            icon: 'success',
+                            confirmButtonText: 'OK'
+                        });
+                    }
 
                     function generateExercise() {
                         // Generar números aleatorios para la base y el exponente
@@ -76,13 +90,26 @@ document.addEventListener("DOMContentLoaded", function () {
                         // Verificar si la respuesta del usuario es correcta
                         if (parseInt(userAnswer) === correctAnswer) {
                             alert('¡Correcto!');
+                            respuestasCorrectasSeguidas++;
+
+                            // Verificar si el usuario ha contestado 5 preguntas seguidas correctamente
+                            if (respuestasCorrectasSeguidas === 5) {
+                                // Avanzar al siguiente nivel
+                                avanzarNivel();
+                            }
+
                         } else {
                             alert('Incorrecto. Inténtalo de nuevo.');
+                            // Reiniciar el contador de respuestas correctas seguidas
+                            respuestasCorrectasSeguidas = 0;
                         }
 
                         // Generar un nuevo ejercicio después de verificar la respuesta
                         generateExercise();
                     }
+
+                    // Asignar el evento clic al botón con el id "verificarButton"
+                    document.getElementById('verificarButton').addEventListener('click', checkAnswer);
 
                     // Generar el primer ejercicio al cargar la página
                     generateExercise();

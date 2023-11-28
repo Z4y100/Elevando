@@ -64,7 +64,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <p id="exercise"></p>
             <label for="userAnswer">Tu respuesta:</label>
             <input type="text" id="userAnswer">
-            <button onclick="checkAnswer()">Verificar</button>
+            <button id="verificarButton">Verificar</button>
+
     </div>
     
 </div>
