@@ -54,4 +54,4 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['recursos/ejercicios'] = 'elevando/mostrar_ejercicios';
 $route['elevando/ejercicios'] = 'elevando/ejercicios';
-$route['elevando/ejercicios'] = 'elevando/material';
+$route['elevando/material'] = 'elevando/material';
