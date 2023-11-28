@@ -353,3 +353,13 @@ body {
     text-align: center; /* Centrar el texto */
     color: purple; /* Color morado */
 }
+
+/* estilos.css */
+
+/* Establecer un ancho máximo para la imagen */
+.rompe{
+    max-width: 30%; /* La imagen no será más ancha que su contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+}
+
+/* Puedes ajustar el tamaño de la imagen según tus necesidades */
